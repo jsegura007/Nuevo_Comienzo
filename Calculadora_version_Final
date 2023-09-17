@@ -1,0 +1,42 @@
+#Ing.Jose_Segura
+print("Menu de Opciones")
+print("Seleccione un número del 1 al 5 para elegir su opción:")
+print("1 Sumar")
+print("2 Restar")
+print("3 Multiplicar")
+print("4 Dividir")
+print("5 Salir")
+
+while True:
+    
+    try:
+        seleccion = int(input("Seleccione su opción: "))
+        if seleccion == 1:
+            print("Se sumarán 2 números enteros.")
+            a = int(input("Ingrese el primer número: "))
+            b = int(input("Ingrese el segundo número: "))
+            suma = a + b
+            print("El resultado es: " + str(suma))
+        elif seleccion == 2:
+            print("Se restarán 2 números.")
+            a = int(input("Ingrese el primer número: "))
+            b = int(input("Ingrese el segundo número: "))
+            resta = a - b
+            print("El resultado es: " + str(resta))
+        elif seleccion == 3:
+            print("Se multiplicarán 2 números.")
+            a = int(input("Ingrese el primer número: "))
+            b = int(input("Ingrese el segundo número: "))
+            multiplicacion = a * b
+            print("El resultado es: " + str(multiplicacion))
+        elif seleccion == 4:
+            print("División.")
+            a = int(input("Ingrese el numerador: "))
+            b = int(input("Ingrese el denominador: "))
+        elif seleccion == 5:
+            print("Saliendo...")
+            break
+        else:
+            print("Opción no válida. Seleccione una opción del 1 al 5.")
+    except ValueError:
+        print("Opción no válida. Seleccione una opción del 1 al 5.")
