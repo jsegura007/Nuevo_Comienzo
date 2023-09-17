@@ -33,6 +33,8 @@ while True:
             print("División.")
             a = int(input("Ingrese el numerador: "))
             b = int(input("Ingrese el denominador: "))
+            print(a/b)
+            break
         elif seleccion == 5:
             print("Saliendo...")
             break
@@ -40,3 +42,4 @@ while True:
             print("Opción no válida. Seleccione una opción del 1 al 5.")
     except ValueError:
         print("Opción no válida. Seleccione una opción del 1 al 5.")
+        
