@@ -1,0 +1,49 @@
+#¡Claro! Aquí tienes un problema interesante para resolver en Python:
+
+#Problema: Cálculo de Estadísticas de una Lista
+
+#Escribe un programa en Python que tome una lista de números como entrada y calcule las siguientes estadísticas:
+
+##La suma de todos los números en la lista. ok
+#El promedio de los números en la lista. ok
+#El número más grande en la lista. ok
+#El número más pequeño en la lista. ok
+#Puedes definir la lista directamente en tu programa o permitir que el usuario la ingrese. Asegúrate de manejar casos donde la lista esté vacía.
+
+#Puedes hacerlo siguiendo estos pasos:
+
+#Solicitar al usuario que ingrese una lista de números (puedes usar la función input para esto y luego dividir los números ingresados en una lista).
+#Utilizar bucles y operaciones matemáticas para calcular las estadísticas requeridas.
+#Imprimir los resultados.
+#Este problema te brinda la oportunidad de practicar el uso de listas, bucles y cálculos matemáticos en Python. ¡Buena suerte! Si tienes alguna pregunta o necesitas ayuda con el código, no dudes en preguntar.
+
+#creacion de la lista de numeros
+mi_primera_lista = [5.0,1.0,4.9,4.2,3.2]
+suma = 0
+
+#ciclo para poder sumar los numeros de la lista 
+for numeros_lista in mi_primera_lista:
+    suma += numeros_lista
+    #print(suma) # si imprimes aqui  imprimiera todas las iteracciones.
+text = f"Total_ sumado en_lista es : {str(suma)}"
+print(text) # si imprimes aqui "fuera del bucle for solo imprimirar  el valor total". Nota_al concatenar se formateo la variable suma.!!!!!!!!
+
+
+# contar  la cantidad de numero dentro de la lista.
+# se usa la funcion LEN()
+cantidad_de_numeros_lista = len(mi_primera_lista)
+text_2 = f"Cantidad de numeros  en la lista es: {str(cantidad_de_numeros_lista)}" 
+print(text_2)
+
+# calcular el primedio de todos los numeros de la lista
+promedio = suma / cantidad_de_numeros_lista
+text_3 = f"El promedio de los  numeros es: {str(promedio)}"
+print(text_3)
+
+#buscar el numero  de mayor valor dentro de la lista 
+mi_valor_mas_alto = max(mi_primera_lista)
+mi_valor_mas_bajo = min(mi_primera_lista)
+text_4 = f"Mi valo mas alto es: {str(mi_valor_mas_alto)}"
+text_5 =f"Mi valo mas bajo es: {str(mi_valor_mas_bajo)}"
+print(text_4)
+print(text_5)
