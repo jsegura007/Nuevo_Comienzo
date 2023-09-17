@@ -1,0 +1,16 @@
+#Ejercicio 1: Variables y Operaciones
+#Crea una variable llamada nombre y asígnale tu nombre.
+#Crea una variable llamada edad y asígnale tu edad.
+#Calcula el año en que naciste utilizando la variable edad y almacénalo en una variable llamada anio_nacimiento.
+#Imprime un mensaje que diga "Hola, [nombre]. Tienes [edad] años y naciste en el año [anio_nacimiento]."
+
+import datetime #para  poder traer  la fecha del dia de hoy
+
+nombre = "jose"
+edad = 30
+
+#fecha_actual = datetime.date.today() ## papra extraer la fecha  del dia de hoy
+fecha_actual = datetime.date.today().year ## para extraer el año
+calculo_de_edad = fecha_actual - edad 
+print(calculo_de_edad)
+#print(c)
