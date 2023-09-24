@@ -1,0 +1,44 @@
+variable_de_arma = "hacha"
+
+print(variable_de_arma)
+
+print("Si vas caminando y te encuentras un hacha y una pistola, ¿cuál de las dos eliges? Solo puedes llevar una.")
+
+arma = input("Selecciona 'hacha' o 'pistola': ")
+
+if arma == "1":
+    print("###############################")
+    print("### Has elegido un Hacha !!! ##")
+    print("###############################")
+    print("")
+    print("######################################################################################################################################################################################")
+    print("# Hay 2 caminos a seguir en tu ruta al trabajo, el primero es de día pero llueve tanto que hay peces y cocodrilos (1), el segundo es de noche y hay muchos ladrones y serpientes (2) ###")
+    print("######################################################################################################################################################################################")
+    
+    camino = input("Elige tu camino (1 para día y 2 para la noche): ")
+
+    if camino == "1":
+        print("Elegiste el camino de día con peces y cocodrilos. Luchaste contra ellos pero PERDISTE EL HACHA Y UNA MANO.")
+
+
+
+    elif camino == "2":
+        print("Elegiste el camino de noche con ladrones y serpientes. Luchaste contra ellos pero no podías ver bien y te apuñalaron en el pie y PERDISTE EL HACHA.")
+    
+
+elif arma == "2":
+    print("#################################")
+    print("## Has elegido una pistola !!!  #")
+    print("#################################")
+    print("##########################################################################################################################################")
+    print("#Hay 2 caminos a seguir en tu ruta al trabajo, el primero es de día pero llueve tanto que hay peces y cocodrilos (1), el segundo es de noche y hay muchos ladrones y serpientes (2)####")
+    print("########################################################################################################################################")
+    camino = input("Elige tu camino (1 para día y 2 para la noche): ")
+    
+    if camino == "1":
+        print("Elegiste el camino de día con peces y cocodrilos. Luchaste contra ellos y se acabaron las balas, entonces te comieron un brazo.")
+    elif camino == "2":
+        print("Elegiste el camino de noche con ladrones y serpientes. Luchaste contra ellos pero se te cayó el arma y no podías ver por la oscuridad, entonces te rompieron una pierna.")
+
+else:
+    print("Si este no es tu camino, ¡vete! ...")
